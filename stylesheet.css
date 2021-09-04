@@ -177,6 +177,14 @@ header {
   box-shadow: none;
 }
 
+.message-text {
+  
+}
+
+.message-text:active {
+  display: none;
+}
+
 footer img {
   width: 125px;
 }

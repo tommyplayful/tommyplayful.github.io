@@ -185,6 +185,21 @@ header {
   display: none;
 }
 
+.message-wrapper .icon-text {
+  width: 80%;
+}
+
+.message-wrapper .icon {
+  float: left;
+  width: 10%;
+}
+
+.message-wrapper .text {
+  float: left
+  width: 90%;
+  border: 1px solid #000;
+}
+
 footer img {
   width: 125px;
 }

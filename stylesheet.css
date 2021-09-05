@@ -194,8 +194,12 @@ header {
   width: 10%;
 }
 
+.message-wrapper .img {
+  width: 100%;
+}
+
 .message-wrapper .text {
-  float: left
+  float: left;
   width: 90%;
   border: 1px solid #000;
 }

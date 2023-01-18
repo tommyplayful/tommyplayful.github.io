@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #2D2D2D;
+  font-family: 'Crimson Text', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2D2D2D;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+ul, li, dl, dt, dd {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+/* ----------
+header
+---------- */
+header {
+  width: 90vw;
+  margin: 60px auto 0 auto;
+}
+
+header .mainvisual img{
+  min-height: 334px;
+  object-fit: cover;
+}
+
+header .menu {
+  padding-top: 30px;
+  display: flex;
+  font-size: 14px;
+}
+
+header .menu .logo img {
+  height: 16px;
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+header .menu nav ul {
+  display: flex;
+}
+
+header .menu nav li {
+  margin-left: 30px;
+}
+
+/* ----------
+main
+---------- */
+main {
+  max-width: 1100px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 0 auto;  
+}
+
+/* ----------
+section
+---------- */
+section {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+section .img {
+  width: 50%;
+}
+
+section .content {
+  width: 50%;
+  padding: 0 67px;
+}
+
+section .content h2 {
+  font-size: 24px;
+}
+
+section .content h3 {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+section .content p {
+  margin-top: 25px;
+}
+
+/* ----------
+footer
+---------- */
+footer {
+  max-width: 1100px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  height: 16px;
+}
+
+footer .copy {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  /* ----------
+  header
+  ---------- */
+  header {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  header .menu{
+    margin-left: 5vw;
+  }
+
+  header .menu .logo img {
+    padding-right: 0;
+  }
+  
+  /* ----------
+  section
+  ---------- */
+  #concept {
+    flex-direction: column;
+  }
+
+  #work {
+    flex-direction: column-reverse;
+  }
+
+  section .img {
+    width: 100%;
+  }
+  
+  section .content {
+    width: 100%;
+    padding: 0;
+  }
+}

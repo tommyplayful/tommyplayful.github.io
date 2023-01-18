@@ -1,167 +1,298 @@
-@charset "UTF-8";
-
-html {
-  font-size: 16px;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  color: #2D2D2D;
-  font-family: 'Crimson Text', serif;
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
 }
 
 a {
   text-decoration: none;
-  color: #2D2D2D;
 }
 
-h1, h2, h3 {
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(top.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn-wrapper p {
+  margin-bottom: 20px;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.lesson-wrapper {
+  height: 580px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
   font-weight: normal;
 }
 
-img {
-  max-width: 100%;
+.lesson {
+  float: left;
+  width: 25%;
 }
 
-li {
-  list-style: none;
+.lesson-icon {
+  position: relative;
 }
 
-ul, li, dl, dt, dd {
-  padding: 0;
-  border: none;
-  margin: 0;
+.lesson-icon p {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  color: white;
 }
 
-/* ----------
-header
----------- */
-header {
-  width: 90vw;
-  margin: 60px auto 0 auto;
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
 }
 
-header .mainvisual img{
-  min-height: 334px;
-  object-fit: cover;
+.heading h3 {
+  font-weight: normal;
 }
 
-header .menu {
-  padding-top: 30px;
-  display: flex;
-  font-size: 14px;
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
 }
 
-header .menu .logo img {
-  height: 16px;
-  vertical-align: top;
-  padding-right: 20px;
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
 }
 
-header .menu nav ul {
-  display: flex;
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 
-header .menu nav li {
-  margin-left: 30px;
+.message-text {
+  
 }
 
-/* ----------
-main
----------- */
-main {
-  max-width: 1100px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: 0 auto;  
+.message-text:active {
+  display: none;
 }
 
-/* ----------
-section
----------- */
-section {
-  padding-top: 60px;
-  display: flex;
-  align-items: center;
+.message-wrapper .icon-text {
+  width: 80%;
 }
 
-section .img {
-  width: 50%;
+.message-wrapper .icon {
+  float: left;
+  width: 10%;
 }
 
-section .content {
-  width: 50%;
-  padding: 0 67px;
+.message-wrapper img {
+  width: 100%;
 }
 
-section .content h2 {
-  font-size: 24px;
-}
-
-section .content h3 {
-  margin-top: 4px;
-  font-size: 16px;
-}
-
-section .content p {
-  margin-top: 25px;
-}
-
-/* ----------
-footer
----------- */
-footer {
-  max-width: 1100px;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
+.message-wrapper .text {
+  float: left;
+  width: 90%;
+  border: 1px solid #000;
 }
 
 footer img {
-  height: 16px;
+  width: 125px;
 }
 
-footer .copy {
-  font-size: 14px;
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
 }
 
-@media screen and (max-width: 767px) {
-  /* ----------
-  header
-  ---------- */
-  header {
-    width: 100vw;
-    margin: 0 auto;
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+.clear {
+  clear: left;
+}
+
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
   }
 
-  header .menu{
-    margin-left: 5vw;
+  .lesson-wrapper {
+    height: 990px;
   }
 
-  header .menu .logo img {
-    padding-right: 0;
+  footer {
+    text-align: center;
   }
-  
-  /* ----------
-  section
-  ---------- */
-  #concept {
-    flex-direction: column;
+}
+
+@media all and (max-width: 750px) {
+  .top-wrapper h1 {
+    font-size: 32px;
   }
 
-  #work {
-    flex-direction: column-reverse;
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
   }
 
-  section .img {
+  .menu-icon {
+    display: block;
+  }
+
+  .top-wrapper .btn {
     width: 100%;
   }
-  
-  section .content {
+
+  .twitter {
+    margin-top: 10px;
+  }
+
+  .top-wrapper {
+    text-align: left;
+  }
+
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+  }
+
+  .lesson {
     width: 100%;
-    padding: 0;
+  }
+
+  .lesson-wrapper {
+    height: 1700px;
+  }
+
+  .message-wrapper .btn {
+    width: 100%;
   }
 }

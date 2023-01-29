@@ -2,6 +2,6 @@
 RewriteEngine On
 
 RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ https://tommyplayful.github.io/dc101/$1 [R=301,L]
+RewriteRule ^(.*)index.html$ https://tommyplayful.github.io/$1 [R=301,L]
 
 </ifmodule>

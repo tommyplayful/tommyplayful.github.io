@@ -147,10 +147,10 @@ business
   justify-content: center;
 }
 #business .items-left {
-  padding-top: 100px;
+  margin-top: 100px;
 }
 #business .items-right {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 #business img {
   height: 232px;
@@ -317,7 +317,7 @@ SP対応
     flex-direction: column;
   }
   #business .items-left {
-    padding-top: 0;
+    margin-top: 0;
   }  
   #business .items-right {
     margin-left: 0;

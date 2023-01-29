@@ -56,7 +56,6 @@ main
 ---------- */
 main {
   background-color: #f0f0f0;
-  padding-bottom: 110px;
 }
 
 /* ----------
@@ -151,7 +150,7 @@ business
   padding-top: 100px;
 }
 #business .items-right {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 #business img {
   height: 232px;
@@ -232,12 +231,6 @@ SP対応
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
-  }
-  /* ----------
-  main
-  ---------- */
-  main {
-    padding-bottom: 0;
   }
   /* ----------
   header
